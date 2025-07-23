@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  padding: 5rem;
+  margin: 3rem auto;
+  color: #fff;
+  border-radius: 10px;
+}
+.container .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-right: 1rem;
+  flex: 1;
+}
+.search button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.search button:hover {
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+.details {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.details img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+.details .temp {
+  font-weight: 500;
+  font-size: 4rem;
+}
+.details .city {
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 5px 0 0 0;
+}
+.other-details {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.other-details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 1rem;
+}
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+.col .humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+.error {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.error img {
+  width: 15rem;
+  height: 15rem;
+}
+.error p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 3rem;
+  }
+
+  .details .temp {
+    font-size: 3rem;
+  }
+
+  .details .city {
+    font-size: 1.3rem;
+  }
+
+  .col .humidity,
+  .col .wind {
+    font-size: 24px;
+  }
+
+  .details img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .error img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .search {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .search input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .details .temp {
+    font-size: 2.5rem;
+  }
+
+  .details .city {
+    font-size: 1.2rem;
+  }
+
+  .col {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .col img {
+    margin-bottom: 5px;
+  }
+
+  .col .humidity,
+  .col .wind {
+    font-size: 17px;
+  }
+
+  .other-details {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
